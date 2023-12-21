@@ -1,0 +1,42 @@
+:root {
+  --accent: darksalmon;
+  --blue: #1e90ff;
+  --white: #ffffff;
+}
+
+body {
+  background-color: var(--accent);
+  display: grid;
+  grid-template-columns: 200px auto;
+  grid-template-rows: 100px 1fr 1fr;
+  grid-template-areas:
+    "header header"
+    "nav main"
+    "nav main";
+}
+
+.secondaryNavigation {
+    background-color: chocolate;
+    grid-area: nav;
+    padding-top: 50px;
+    padding-left: 20px;
+}
+
+.secondaryNavigation ul {
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+    color: var(--white);
+    position: sticky;
+    top: 150px;
+    z-index: 9;
+}
+
+main {
+    grid-area: main;
+}
+
+.sectionTitle {
+  font-size: 20px;
+  font-weight: bold;
+}

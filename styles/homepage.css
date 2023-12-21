@@ -1,0 +1,21 @@
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  height: 600px;
+  grid-gap: 10px;
+}
+
+.grid-item {
+  background-color: blanchedalmond;
+  border: 2px solid var(--blue);
+}
+
+.grid-item:first-child {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+
